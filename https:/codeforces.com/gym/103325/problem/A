@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <map>
+#include <set>
+#include <algorithm>
+#include <string>
+#include <vector>
+
+// Time complexity: O( n )
+
+const int MOD = 1e9 + 7;
+
+int main() {
+    int n, k, c;
+    scanf("%d %d %d", &n, &k, &c);
+
+    long long ans = 0;
+
+    std::map <int, int> dict;
+    std::vector <int> use;
+
+    for (int i = 0; i < n; i++) {
+        int buf;
+        scanf("%d", &buf);
+
+        if (dict[buf] == 0) {
+            use.push_back(buf);
+        }
+
+        dict[buf]++;
+    }
+
+    std::sort(use.begin(), use.end());
+
+    int first = 0;
+    int second = 0;
+
+    while (true) {
+
+
+
+
+    }
+    return 0;
+}
